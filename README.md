@@ -79,7 +79,7 @@ Replace with:
 st.rerun()
 ```
 
-### 3. 3. PowerShell Activation Error ⚡
+### 3. PowerShell Activation Error ⚡
 Open PowerShell as Administrator and run:
 ```sh
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
