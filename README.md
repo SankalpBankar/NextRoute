@@ -16,7 +16,7 @@ NextRoute/
 ## 💡 Tech Stack 🛠️
 - **Python** 🐍 — Core programming language for logic and data handling
 - **Streamlit** 🌐 — For building the interactive web interface
-- **Pandas 📦 — Data handling
+- **Pandas** 📦 — Data handling
 - **NetworkX** ⚡ — Manipulation of Graphs
 - **Matplotlib** 📈 — Visualization
 
@@ -61,3 +61,36 @@ pip install -r requirements.txt
 ```sh
 streamlit run app.py
 ```
+
+## 🛠️ Troubleshooting 🚨
+
+### 1. ValueError: Unknown format code 'f' for object of type 'str'
+Apply formatting only to numeric columns:
+```sh
+st.dataframe(df_main.style.format(
+    {col: "{:.1f}" for col in df_main.select_dtypes(include="number").columns},
+    na_rep="∞"
+))
+```
+
+### 2. AttributeError: module 'streamlit' has no attribute 'experimental_rerun'
+Replace with:
+```sh
+st.rerun()
+```
+
+### 3. 3. PowerShell Activation Error
+Open PowerShell as Administrator and run:
+```sh
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+Then retry:
+```sh
+.\myenv\Scripts\activate
+```
+
+## 💻⚙️Contributions
+### 1️⃣ Sankalp Bankar (A7-B1-17)
+### 2️⃣ Anish Makhija  (A7-B1-01)
+### 3️⃣ Deeya Saoji    (A7-B1-10)
