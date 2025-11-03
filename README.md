@@ -1,15 +1,15 @@
-# NextRoute 
+# 🛰️ NextRoute 💻 🌐
 A **Streamlit-based visual simulator** for the **Distance Vector Routing Algorithm**, which demonstrates how routers exchange routing information and update their routing tables until convergence.
 
 ## 📁 Project Directory Structure 🧠💬
 
 ```
 NextRoute/
-├── .gitignore            # To exclude myenv and other temp files
-├── app.py                # Streamlit app (main simulator)
-├── main.py               # Algorithm code
-├── README.md             # GitHub documentation
-└── requirements.txt      # Dependencies list
+├── .gitignore            # 🛡️To exclude myenv and other temp files
+├── app.py                # 🖥️🎨 Streamlit app (main simulator)
+├── main.py               # ⚙️ Algorithm code
+├── README.md             # 📖 Project overview and usage guide
+└── requirements.txt      # ✅ Dependencies list
 
 ```
 
@@ -31,12 +31,12 @@ git clone https://github.com/SankalpBankar/NextRoute.git
 cd NextRoute
 ```
 
-### 2️⃣ Create a virtual environment
+### 2️⃣ Create a virtual environment 🐍
 ```sh
 python -m venv myenv
 ```
 
-### 3️⃣ Activate the environment
+### 3️⃣ Activate the environment 📦
 On Windows (PowerShell):
 ```sh
 .\myenv\Scripts\activate
@@ -52,19 +52,19 @@ On macOS/Linux:
 source myenv/bin/activate
 ```
 
-### 4️⃣ Install dependencies
+### 4️⃣ Install dependencies 📦
 ```sh
 pip install -r requirements.txt
 ```
 
-### 5️⃣ Run the app
+### 5️⃣ Run the Streamlit app 🚀
 ```sh
 streamlit run app.py
 ```
 
 ## 🛠️ Troubleshooting 🚨
 
-### 1. ValueError: Unknown format code 'f' for object of type 'str'
+### 1. ValueError ⚠️: Unknown format code 'f' for object of type 'str'
 Apply formatting only to numeric columns:
 ```sh
 st.dataframe(df_main.style.format(
@@ -73,13 +73,13 @@ st.dataframe(df_main.style.format(
 ))
 ```
 
-### 2. AttributeError: module 'streamlit' has no attribute 'experimental_rerun'
+### 2. AttributeError 🧩: module 'streamlit' has no attribute 'experimental_rerun'
 Replace with:
 ```sh
 st.rerun()
 ```
 
-### 3. 3. PowerShell Activation Error
+### 3. 3. PowerShell Activation Error ⚡
 Open PowerShell as Administrator and run:
 ```sh
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
