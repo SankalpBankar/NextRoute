@@ -52,3 +52,12 @@ On macOS/Linux:
 source myenv/bin/activate
 ```
 
+### 4️⃣ Install dependencies
+```sh
+pip install -r requirements.txt
+```
+
+### 5️⃣ Run the app
+```sh
+streamlit run app.py
+```
